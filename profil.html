@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Penulis - Eksplorasi Tarian</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-card {
+            text-align: center;
+            padding: 40px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #f1c40f;
+            margin-bottom: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 15px #f1c40f;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .social-btn {
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* Warna Khusus Instagram */
+        .btn-ig {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            color: white;
+        }
+        /* Warna Khusus TikTok */
+        .btn-tt {
+            background-color: #000;
+            color: white;
+            border: 1px solid #fff;
+        }
+        .social-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="beranda.html">← Kembali ke Beranda</a>
+    </nav>
+
+    <div class="container">
+        <div class="profile-card">
+            <!-- Ganti 'foto-profil.jpg' dengan file foto Anda -->
+            <img src="nabilla.jpeg" alt="Foto Profil" class="profile-img">
+            
+            <h1>Profil Penulis</h1>
+            <p>Hallo semuanya Saya Nabilla pengembang blog <strong>Eksplorasi Tarian</strong>. Melalui platform ini, saya berharap kita bisa lebih mengenal dan melestarikan kekayaan budaya Nusantara, khususnya seni tari tradisional.</p>
+            
+            <hr style="margin: 30px 0; border: 0; border-top: 1px solid rgba(255,255,255,0.2);">
+            
+            <h3>Mari Terhubung di Media Sosial:</h3>
+            <div class="social-links">
+                <!-- Masukkan Username IG Anda di href -->
+                <a href="https://www.instagram.com/nabillavgaaisyah.n_?igsh=MThvdG0zdDlpYTAyZQ==" target="_blank" class="social-btn btn-ig">
+                    📸 Instagram
+                </a>
+                
+                <!-- Masukkan Username TikTok Anda di href -->
+                <a href="https://www.tiktok.com/@_billa_44?_r=1&_t=ZS-968GKvSRFCc" target="_blank" class="social-btn btn-tt">
+                    🎵 TikTok
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Memastikan mode gelap tetap aktif jika dipilih sebelumnya
+        if (document.body.classList.contains("dark-mode")) {
+            // Logika tambahan jika diperlukan
+        }
+    </script>
+</body>
+</html>
