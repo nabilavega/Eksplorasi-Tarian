@@ -1,0 +1,128 @@
+/* Dasar & Background Utama */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Teks putih agar kontras dengan latar */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('gambar tarian.png') no-repeat center center fixed;
+    background-size: cover;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+/* Navigasi Transparan */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #f1c40f;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #f1c40f;
+}
+
+/* Tombol Mode */
+#mode-btn {
+    background: #f1c40f;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Kontainer Transparan (Glassmorphism) */
+.container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1); /* Efek Kaca */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+    text-align: justify;
+}
+
+/* Section & Judul */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(241, 196, 15, 0.3);
+}
+
+h1, h2 {
+    color: #f1c40f;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+h2 {
+    border-left: 10px solid #f1c40f;
+    padding-left: 20px;
+    font-size: 2rem;
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    margin: 25px 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+}
+
+/* Menu Box */
+#menu-box {
+    background: rgba(241, 196, 15, 0.2) !important;
+    border: 1px solid #f1c40f;
+    border-radius: 15px;
+}
+
+#menu-box a {
+    color: #fff !important;
+    transition: 0.3s;
+}
+
+#menu-box a:hover {
+    padding-left: 10px;
+    color: #f1c40f !important;
+}
+
+/* Mode Gelap Total */
+body.dark-mode {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), 
+                url('gambar tarian.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.back-up {
+    display: inline-block;
+    margin-top: 15px;
+    color: #f1c40f;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
